@@ -1,0 +1,87 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+// sass --watch file.scss desired.css
+$primary-1: #300350;
+$primary-2: #94167F;
+$primary-3:#E93479;
+$primary-4:#F9AC53;
+$primary-5: #F62E97;
+$primary-6: #153CB4;
+$primary-7: #65B8BF;
+$primary-8: #66a1d2;
+$primary-9: #455f65;
+$primary-10: #dcd5d5;
+$primary-11: #b4a6a6;  
+
+html {
+background-color: $primary-6;   
+}
+body{
+
+    background-image: linear-gradient(0deg,$primary-4,$primary-5,$primary-1 );
+    background-repeat: repeat-x;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+header{
+    background-color: $primary-1;
+    h1{
+        font-style: oblique;
+        color: $primary-4;
+        
+    }
+    h2{
+        font-style: italic;
+        color: $primary-3;
+        padding-top: 0%;
+        font-size:large;
+        }
+} 
+
+.navbar {
+
+    /*background-image: linear-gradient(360deg,rgba(249, 172, 83, .8),rgba(21, 60, 180, 1));*/
+    color: $primary-1;
+    background-color: $primary-7 ;
+    border-style: groove;
+    border-color: $primary-1;
+   
+    height: 100%;
+    width: 10%;
+    position:sticky;
+    box-shadow: 20px 10px $primary-5;
+    
+    top: 0;
+    .nav flex-column {
+        .nav-item{
+            padding: 10px;
+
+            
+        button {
+            background-color: $primary-10;
+            border-radius: 0px 80px;
+            border-style: inset;
+            border-color: $primary-10;
+            border-width: 5px;
+        }
+    
+        .nav-link{
+            padding: 8px 8px;
+            text-decoration:none;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: $primary-9;
+    
+        }
+    }
+}
+}
+
+/*.nav-link{
+    padding: 8px 8px;
+    text-decoration:none;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $primary-9;
+*/

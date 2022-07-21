@@ -1,0 +1,110 @@
+// sass --watch file.scss desired.css
+// do in same dir as files
+$primary-1: #300350;
+$primary-2: #94167F;
+$primary-3:#E93479;
+$primary-4:#F9AC53;
+$primary-5: #F62E97;
+$primary-6: #153CB4;
+$primary-7: #65B8BF;
+$primary-8: #66a1d2;
+$primary-9: #455f65;
+$primary-10: #dcd5d5;
+$primary-11: #b4a6a6;  
+/*@import "../node_modules/bootstrap/scss/bootstrap";*/
+
+
+html {
+    background-color: $primary-11;
+}
+
+
+
+body {
+    background-image: linear-gradient(0deg, $primary-4, $primary-2, $primary-1);
+    min-height: 100vh;
+}
+
+.container-fluid {
+    padding-top: 4%;
+}
+#top {
+    background-color:  $primary-1;
+    color: $primary-5;
+    font-style: oblique;
+    font-family:monospace;
+}
+
+#bar {
+    box-shadow: 8px 8px $primary-5;
+    background-color: $primary-7;
+}
+
+#pageSign {
+
+    color: $primary-6;
+    background-color: #dcd5d5;
+    border-radius: 50% 50%;
+    border-style: groove;
+    border-color: #b4a6a6;
+    border-width: 5px;
+    font-style: oblique;
+    margin-top: 2%;
+    
+}
+
+.navButton {
+        border-radius: 0px 45px;
+        background-color: $primary-10;
+        color: $primary-6;
+        font-family:monospace;
+        border-style:groove;
+        border-color: $primary-11;
+        border-width: 5px;
+        padding-top: 2%;
+        padding-right: 3px;
+        margin-top: 2%;
+        margin-right: auto;
+    }
+
+.nav-link.active {
+            text-align: center;
+            padding: 8px;
+            text-decoration: none;
+            
+        }
+    
+
+img {
+    height:25%;
+    width: 25%;
+}
+
+.btn.btn-sm {
+        border-radius: 0px 45px;
+        background-color: $primary-10;
+        color: $primary-6;
+        font-family:monospace;
+        border-style:inset;
+        border-color: $primary-11;
+        border-width: 5px;
+        margin-top: 2%;
+
+}
+
+.row.credits {
+    background-color: $primary-11;
+}
+
+.col.media {
+    background-color: $primary-6;
+}
+
+.row.review {
+    background-color: $primary-8;
+    box-shadow: 8px 8px $primary-3;
+}
+
+.col.media.alt {
+    
+}
