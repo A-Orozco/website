@@ -6,10 +6,11 @@ html {
 body {
   background-image: linear-gradient(0deg, #F9AC53, #94167F, #300350);
   min-height: 100vh;
+  padding-top: 70px;
 }
 
 .container-fluid {
-  padding-top: 4%;
+  padding-top: 0%;
 }
 
 .container-fluid.navSpace {
@@ -17,13 +18,13 @@ body {
   height: 10%;
 }
 
-#top {
-  background-color: #300350;
-  color: #F62E97;
-  font-style: oblique;
-  font-family: monospace;
+/*#top {
+    background-color:  $primary-1;
+    color: $primary-5;
+    font-style: oblique;
+    font-family:monospace;
 }
-
+*/
 #bar {
   box-shadow: 8px 8px #F62E97;
   background-color: #65B8BF;
@@ -37,6 +38,8 @@ body {
   border-color: #b4a6a6;
   border-width: 5px;
   font-style: oblique;
+  position: relative;
+  text-align: center;
 }
 
 .navButton {

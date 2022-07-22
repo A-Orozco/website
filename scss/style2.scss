@@ -23,10 +23,11 @@ html {
 body {
     background-image: linear-gradient(0deg, $primary-4, $primary-2, $primary-1);
     min-height: 100vh;
+    padding-top: 70px;
 }
 
 .container-fluid {
-    padding-top: 4%;
+    padding-top: 0%;
 
 }
 
@@ -34,16 +35,17 @@ body {
     padding-top:0%;
     height:10%;
 }
-#top {
+/*#top {
     background-color:  $primary-1;
     color: $primary-5;
     font-style: oblique;
     font-family:monospace;
 }
-
+*/
 #bar {
     box-shadow: 8px 8px $primary-5;
     background-color: $primary-7;
+    //position:fixed;
 }
 
 #pageSign {
@@ -55,6 +57,10 @@ body {
     border-color: #b4a6a6;
     border-width: 5px;
     font-style: oblique;
+    
+    position:relative;
+    text-align: center;
+    
     
     
 }
