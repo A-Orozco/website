@@ -13,12 +13,23 @@
     </head>
 
     <body>
-       
-        <header>
-       <!--  Main navigation bar -->
-        <nav class="navbar navbar-expand-lg fixed-top" id="bar">
+        <!--containers = wraps content with padding and aligns content horizontally
+        .container = max width @ each response break
+        .container-fluid = 100% max width at all breakpoints
+        .container-{sm || md || lg || xl || xxl)
+        
+        
+        -->
+        <div class='container text-center' id="top">
+            <h1>Aural Voyage</h1>
+            <p>Peering into uncharted soundscapes</p>
+        </div>
+
+        <!--  Main navigation bar -->
+        
+        <nav class="navbar navbar-expand-lg" id="bar">
             
-            <div class="container-fluid navSpace">
+            <div class="container-fluid">
               
                 <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +37,7 @@
 
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   
                     <li class="nav-item">
                         <button type="button" class="btn btn-sm">
@@ -63,16 +74,11 @@
               </div>
             </div>
           </nav>
-
-        
-
-        
           <!-- Page sign-->
-          <div class="container-fluid" id="pageSign">
-            <h1 class="text-center">Page Title</h1>
-          </div>
-        
-        </header>
+          <h1 class="display-3 text-center" id="pageSign">Page Title</h1>
+
+
+
 
 
 

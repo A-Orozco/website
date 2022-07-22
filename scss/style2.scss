@@ -27,6 +27,12 @@ body {
 
 .container-fluid {
     padding-top: 4%;
+
+}
+
+.container-fluid.navSpace {
+    padding-top:0%;
+    height:10%;
 }
 #top {
     background-color:  $primary-1;
@@ -49,7 +55,7 @@ body {
     border-color: #b4a6a6;
     border-width: 5px;
     font-style: oblique;
-    margin-top: 2%;
+    
     
 }
 
@@ -61,15 +67,14 @@ body {
         border-style:groove;
         border-color: $primary-11;
         border-width: 5px;
-        padding-top: 2%;
+       
         padding-right: 3px;
-        margin-top: 2%;
-        margin-right: auto;
+       // margin-right: auto;
     }
 
 .nav-link.active {
             text-align: center;
-            padding: 8px;
+           // padding: 8px;
             text-decoration: none;
             
         }
@@ -88,7 +93,7 @@ img {
         border-style:inset;
         border-color: $primary-11;
         border-width: 5px;
-        margin-top: 2%;
+        margin-top: 1%;
 
 }
 
@@ -105,6 +110,6 @@ img {
     box-shadow: 8px 8px $primary-3;
 }
 
-.col.media.alt {
+.row.show {
     
 }

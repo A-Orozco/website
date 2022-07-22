@@ -12,6 +12,11 @@ body {
   padding-top: 4%;
 }
 
+.container-fluid.navSpace {
+  padding-top: 0%;
+  height: 10%;
+}
+
 #top {
   background-color: #300350;
   color: #F62E97;
@@ -32,7 +37,6 @@ body {
   border-color: #b4a6a6;
   border-width: 5px;
   font-style: oblique;
-  margin-top: 2%;
 }
 
 .navButton {
@@ -43,15 +47,11 @@ body {
   border-style: groove;
   border-color: #b4a6a6;
   border-width: 5px;
-  padding-top: 2%;
   padding-right: 3px;
-  margin-top: 2%;
-  margin-right: auto;
 }
 
 .nav-link.active {
   text-align: center;
-  padding: 8px;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ img {
   border-style: inset;
   border-color: #b4a6a6;
   border-width: 5px;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .row.credits {
