@@ -80,11 +80,20 @@ body {
 
 .nav-link.active {
             text-align: center;
-           // padding: 8px;
+           
             text-decoration: none;
             
+            
+            
         }
-    
+
+.nav-item {
+
+    list-style-type:none;
+    //border-style: inset;
+    //border-radius: 0px 45px ;
+
+        }
 
 img {
     height:25%;
@@ -100,6 +109,7 @@ img {
         border-color: $primary-11;
         border-width: 5px;
         margin-top: 1%;
+        
 
 }
 

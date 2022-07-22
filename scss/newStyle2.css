@@ -58,6 +58,10 @@ body {
   text-decoration: none;
 }
 
+.nav-item {
+  list-style-type: none;
+}
+
 img {
   height: 25%;
   width: 25%;
