@@ -38,8 +38,9 @@ body {
   border-color: #b4a6a6;
   border-width: 5px;
   font-style: oblique;
-  position: relative;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 .navButton {
@@ -79,6 +80,19 @@ img {
   margin-top: 1%;
 }
 
+#dropLogin {
+  border-radius: 0px 45px;
+  background-color: #dcd5d5;
+  color: #153CB4;
+  font-family: monospace;
+  border-style: inset;
+  border-color: #b4a6a6;
+  border-width: 5px;
+  margin-top: 1%;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
 .row.credits {
   background-color: #b4a6a6;
 }
@@ -90,6 +104,54 @@ img {
 .row.review {
   background-color: #66a1d2;
   box-shadow: 8px 8px #E93479;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.col.poster-id {
+  background-color: #F9AC53;
+}
+
+.welcome {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #b4a6a6;
+  border-style: groove;
+  border-width: 3px;
+  border-color: #F9AC53;
+  border-radius: 80px;
+}
+
+.dropdown-menu {
+  background-color: #b4a6a6;
+  font-family: "Times New Roman", Times, serif;
+  border-style: inset;
+  border-color: #153CB4;
+  border-bottom-right-radius: 50px;
+}
+
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*.carousel-item img {
+width: auto;
+height: auto;
+}*/
+.cta {
+  background-color: #65B8BF;
+  box-shadow: -8px 8px #dcd5d5;
+}
+
+#ctaButton {
+  background-color: #F9AC53;
+  border-style: groove;
+  border-color: #F9AC53;
+  border-width: 10px;
 }
 
 /*# sourceMappingURL=newStyle2.css.map */

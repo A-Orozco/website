@@ -8,148 +8,80 @@
         <meta charset=""utf-16>
         <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1.0">
         <title>Aural Voyage</title>
-        <link rel='stylesheet' href="scss/newStyle2.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel='stylesheet' href="scss/newStyle2.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     </head>
 
     <body>
-        <!--containers = wraps content with padding and aligns content horizontally
-        .container = max width @ each response break
-        .container-fluid = 100% max width at all breakpoints
-        .container-{sm || md || lg || xl || xxl)
+       
         
-        
-        -->
-        
-
-        <!--  Main navigation bar -->
-        <header>
-            <!--  Main navigation bar -->
-             <nav class="navbar navbar-expand-lg fixed-top" id="bar">
-                 
-                 <div class="container-fluid navSpace">
-                   
-                     <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                   </button>
-     
-                   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                     
-                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       
-                         <li class="nav-item">
-                             <button type="button" class="btn btn-sm">
-                             <a class="nav-link active" aria-current="page" href="index.html">H o m e</a>
-                             </button>
-                         </li>
-     
-                         <li class="nav-item">
-                             <button type="button" class="btn btn-sm">
-                             <a class="nav-link active" aria-current="page" href="#">N e w s</a>
-                             </button>
-                         </li>
-     
-                         <li class="nav-item">
-                             <button type="button" class="btn btn-sm">
-                             <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
-                             </button>
-                         </li>
-     
-                         <li class="nav-item">
-                             <button type="button" class="btn btn-sm">
-                             <a class="nav-link active" aria-current="page" href="showcase.html">Showcase</a>
-                             </button>
-                         </li>
-     
-     
-                         
-                       
-                     </ul>
-                     <form class="d-flex">
-                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                       <button class="btn btn-outline-success" type="submit">Search</button>
-                     </form>
-                   </div>
-                 </div>
-               </nav>
-     
-             </header>
-     
-             <main>
-               <!-- Page sign-->
-               <div class="container-fluid" id="pageSign">
-                 <h1 class="display-3 text-center">Page Title</h1>
-               </div>
-             
-          
-          
-          <!-- alt:  container {article}-->
-          
-         <!-- <div class="container-fluid post">
-            <article>
-                <h1>Album: NEW EARTH: GENERATION X7</h1>
-                <img class="img-fluid float-start rounded-circle" src="img/cover.jpg" id="album">
-                
-                
-                <section>
-                    <h2>Impression</h2>
-                    <p>Clicking the "surprise me" button on bandcamp brought me to this.  A mecha themed, broken transmission experience that
-                    packs alot of action despite its brevity.  Being a mecha appreciator, my imagination runs wild in trying to orient myself
-                    in the universe this album conveys.  I found myself constructing scenes that would match what I heard.  Picturing the frantic staff
-                    as they assist the protagonist launch into a decisive battle.  Or the emotional side stories of the romance and drama between the characters.
-                    Juding by the few people who supported this album, this seems like an obscure amateur's first release.  Whatever it is, i consider it precious regardless.
-                    </p>
-
-                </section>
-
-            </article>
-
-            </div>
-        -->
-        
-        <!-- Container for review posts-->
-            <div class="container-fluid">
-                <!--Album:Artist row-->
-                <div class="row credits">
-
-                    <div class="col-12">
-                        <h2 class="display-6">Album</h2>
-                        <p class="fw-lighter">Artist</p>
-                    </div>
-                </div>
-                <!--album details-->
-                <div class="row">
-                    <!--media column-->
-                    <div class="col media">
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2971645698/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/artwork=small/transparent=true/" seamless>
-                            <a href="https://nu-apollo.bandcamp.com/album/new-earth-generation-x7">NEW EARTH: GENERATION X7 by W.R.I.</a>
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="row review">
-                    <div class="col">
-                        <article>
-                            <h3>sentiment</h3>
-                            <p class="fw-lighter">by Valentinus</p>
-                            <sectopm>
-                                my opinions
-                            </sectopm>
-                        </article>
-                    </div>
+       <!--  Main navigation bar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="bar">
             
-                </div>
+            <div class="container-fluid navSpace">
+              
+                <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
+              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
                 
+                <ul class="d-flex mb-2 justify-content-center">
+                    <!--navbar-nav me-auto mb-2 mb-lg-0 as alt once justify-content centers buttons-->
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-sm">
+                        <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-sm">
+                        <a class="nav-link active px-4" aria-current="page" href="news.html">News</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-sm">
+                        <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-sm">
+                        <a class="nav-link active" aria-current="page" href="showcase.html">Showcase</a>
+                        </button>
+                    </li>
+
+
                     
-
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
+          </nav>
+        <!--main content-->
+        <header class="page-header header container-fluid">
+          
+            <div class="container-fluid">
+                <h1 class="display-5" id="pageSign">Page Title</h1>
+            </div>
+          
+        </header>
 
-            <!-- Container for review posts-->
+        <main>
+            <div class="container-fluid">
+                <!-- Container for review posts-->
             <div class="container-fluid">
                 <!--Album:Artist row-->
                 <div class="row credits">
-
+            
                     <div class="col-12">
                         <h2 class="display-6">Album</h2>
                         <p class="fw-lighter">Artist</p>
@@ -164,7 +96,7 @@
                         </iframe>                    
                     </div>
                 </div>
-
+            
                 <div class="row review">
                     <div class="col">
                         <article>
@@ -177,18 +109,17 @@
                     </div>
             
                 </div>
-
+            
                 
                     
-
+            
             </div>
-
-
+            
             <!-- Container for review posts-->
             <div class="container-fluid">
                 <!--Album:Artist row-->
                 <div class="row credits">
-
+            
                     <div class="col-12">
                         <h2 class="display-6">Album</h2>
                         <p class="fw-lighter">Artist</p>
@@ -197,11 +128,13 @@
                 <!--album details-->
                 <div class="row">
                     <!--media column-->
-                    <div class="col media">
-                        <!--place embed album iframe here-->
+                    <div class="col media2">
+                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1105161721/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" seamless>
+                            <a href="https://sunsetgrid.bandcamp.com/album/internet-explored">Internet Explored by Sunset Grid</a>
+                        </iframe>                    
                     </div>
                 </div>
-
+            
                 <div class="row review">
                     <div class="col">
                         <article>
@@ -214,18 +147,18 @@
                     </div>
             
                 </div>
-
+            
                 
                     
-
+            
             </div>
-
-
+            
+            
             <!-- Container for review posts-->
             <div class="container-fluid">
                 <!--Album:Artist row-->
                 <div class="row credits">
-
+            
                     <div class="col-12">
                         <h2 class="display-6">Album</h2>
                         <p class="fw-lighter">Artist</p>
@@ -234,11 +167,13 @@
                 <!--album details-->
                 <div class="row">
                     <!--media column-->
-                    <div class="col media">
-                        <!--place embed album iframe here-->
+                    <div class="col media2">
+                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1105161721/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" seamless>
+                            <a href="https://sunsetgrid.bandcamp.com/album/internet-explored">Internet Explored by Sunset Grid</a>
+                        </iframe>                    
                     </div>
                 </div>
-
+            
                 <div class="row review">
                     <div class="col">
                         <article>
@@ -251,16 +186,56 @@
                     </div>
             
                 </div>
-
+            
                 
                     
-
-            </div>
-
-             </main>
             
-
-
+            </div>
+            
+            
+            <!-- Container for review posts-->
+            <div class="container-fluid">
+                <!--Album:Artist row-->
+                <div class="row credits">
+            
+                    <div class="col-12">
+                        <h2 class="display-6">Album</h2>
+                        <p class="fw-lighter">Artist</p>
+                    </div>
+                </div>
+                <!--album details-->
+                <div class="row">
+                    <!--media column-->
+                    <div class="col media2">
+                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1105161721/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" seamless>
+                            <a href="https://sunsetgrid.bandcamp.com/album/internet-explored">Internet Explored by Sunset Grid</a>
+                        </iframe>                    
+                    </div>
+                </div>
+            
+                <div class="row review">
+                    <div class="col">
+                        <article>
+                            <h3>sentiment</h3>
+                            <p class="fw-lighter">by Valentinus</p>
+                            <sectopm>
+                                my opinions
+                            </sectopm>
+                        </article>
+                    </div>
+            
+                </div>
+            
+                
+                    
+            
+            </div>
+            
+            
+            </div>
+        </main>
+        
+        
 
 
 
@@ -271,3 +246,4 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
+

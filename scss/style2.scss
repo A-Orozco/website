@@ -11,6 +11,7 @@ $primary-8: #66a1d2;
 $primary-9: #455f65;
 $primary-10: #dcd5d5;
 $primary-11: #b4a6a6;  
+$primary-12: #b252a1;
 /*@import "../node_modules/bootstrap/scss/bootstrap";*/
 
 
@@ -57,14 +58,10 @@ body {
     border-color: #b4a6a6;
     border-width: 5px;
     font-style: oblique;
-    
-    position:relative;
     text-align: center;
-    
-    
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
-
 .navButton {
         border-radius: 0px 45px;
         background-color: $primary-10;
@@ -113,6 +110,20 @@ img {
 
 }
 
+ #dropLogin {
+    border-radius: 0px 45px;
+    background-color: $primary-10;
+    color: $primary-6;
+    font-family:monospace;
+    border-style:inset;
+    border-color: $primary-11;
+    border-width: 5px;
+    margin-top: 1%;
+    padding-top: 10px;
+    padding-bottom: 12px;
+
+}
+
 .row.credits {
     background-color: $primary-11;
 }
@@ -128,4 +139,54 @@ img {
 
 .row.show {
     
+}
+
+video {
+    // this ensures video stays in card container
+    max-width:100%;
+    height:auto;
+}
+
+.col.poster-id {
+    background-color: $primary-4;
+}
+
+.welcome {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: $primary-11;
+    border-style: groove;
+    border-width: 3px;
+    border-color: $primary-4;
+    border-radius: 80px;
+}
+
+.dropdown-menu {
+    background-color: $primary-11;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: inset;
+    border-color: $primary-6;
+    border-bottom-right-radius: 50px;
+}
+
+.carousel-item {
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+    }
+    /*.carousel-item img {
+    width: auto;
+    height: auto;
+    }*/
+
+    .cta {
+        background-color: $primary-7;
+        box-shadow: -8px 8px $primary-10;
+
+    }
+
+#ctaButton {
+    background-color: $primary-4;
+    border-style:groove;
+    border-color:$primary-4;
+    border-width: 10px;
 }
