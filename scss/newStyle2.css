@@ -154,4 +154,34 @@ height: auto;
   border-width: 10px;
 }
 
+aside {
+  background-color: #153CB4;
+}
+
+.badge.rounded-pill {
+  background-color: #F62E97;
+}
+
+.col.a {
+  background-color: #b252a1;
+  border-style: solid;
+}
+
+.col.b {
+  background-color: #dcd5d5;
+  border-style: double;
+  border-color: #300350;
+}
+
+.c_button {
+  border-radius: 0px 45px;
+  background-color: #dcd5d5;
+  color: #153CB4;
+  font-family: monospace;
+  border-style: inset;
+  border-color: #b4a6a6;
+  border-width: 5px;
+  margin-top: 1%;
+}
+
 /*# sourceMappingURL=newStyle2.css.map */
