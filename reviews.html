@@ -18,54 +18,16 @@
     <body>
        
         
-       <!--  Main navigation bar -->
-        <nav class="navbar navbar-expand-lg fixed-top" id="bar">
-            
-            <div class="container-fluid navSpace">
-              
-                <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+        <!--new navbar code-->
+        <div id="navLoad" style="height:15px;">
 
-              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-                
-                <ul class="d-flex mb-2 justify-content-center">
-                    <!--navbar-nav me-auto mb-2 mb-lg-0 as alt once justify-content centers buttons-->
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
-                        </button>
-                    </li>
+        </div>
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active px-4" aria-current="page" href="news.html">News</a>
-                        </button>
-                    </li>
-
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
-                        </button>
-                    </li>
-
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active" aria-current="page" href="showcase.html">Showcase</a>
-                        </button>
-                    </li>
-
-
-                    
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+        <script>
+        $(function(){
+            $("#navLoad").load("nav.html")
+        })
+        </script>
         <!--main content-->
         <header class="page-header header container-fluid">
           
@@ -115,23 +77,24 @@
             
             </div>
             
-            <!-- Container for review posts-->
+            <div class="container-fluid"> <!-- one of Dan's reviews -->
+                <!-- Container for review posts-->
             <div class="container-fluid">
                 <!--Album:Artist row-->
                 <div class="row credits">
             
                     <div class="col-12">
-                        <h2 class="display-6">Album</h2>
-                        <p class="fw-lighter">Artist</p>
+                        <h2 class="display-6">Raw Data Feel</h2>
+                        <p class="fw-lighter">Everything Everything</p>
                     </div>
                 </div>
                 <!--album details-->
                 <div class="row">
                     <!--media column-->
                     <div class="col media2">
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1105161721/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" seamless>
-                            <a href="https://sunsetgrid.bandcamp.com/album/internet-explored">Internet Explored by Sunset Grid</a>
-                        </iframe>                    
+                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2861974811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1670806553/transparent=true/" seamless>
+                            <a href="https://everythingeverything.bandcamp.com/album/raw-data-feel">Raw Data Feel by Everything Everything</a>
+                        </iframe>                
                     </div>
                 </div>
             
@@ -141,7 +104,7 @@
                             <h3>sentiment</h3>
                             <p class="fw-lighter">by Valentinus</p>
                             <sectopm>
-                                my opinions
+                                Everything Everything's newest album, Raw Data Feel
                             </sectopm>
                         </article>
                     </div>

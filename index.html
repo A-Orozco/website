@@ -22,56 +22,16 @@
     <body>
        
         
-       <!--  Main navigation bar -->
-        <nav class="navbar navbar-expand-lg fixed-top" id="bar">
-            
-            <div class="container-fluid navSpace">
-              
-                <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+       <!--new navbar code-->
+        <div id="navLoad" style="height:15px;">
 
-              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-                
-                <ul class="d-flex mb-2 justify-content-center">
-                    <!--navbar-nav me-auto mb-2 mb-lg-0 as alt once justify-content centers buttons-->
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
-                        </button>
-                    </li>
+        </div>
 
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active px-4" aria-current="page" href="news.html">News</a>
-                        </button>
-                    </li>
-
-                    <li class="nav-item">
-                        <!--<button type="button" class="btn btn-sm">
-                        <a class="nav-link active" aria-current="page" href="reviews.html">Reviews</a>
-                        </button>-->
-                        <a class="p-3 c_button" href="register.html">Register</a>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-sm">
-                        <a class="nav-link active" aria-current="page" href="showcase.html">Showcase</a>
-                        </button>
-                    </li>
-
-
-                    
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+        <script>
+        $(function(){
+            $("#navLoad").load("nav.html")
+        })
+        </script>
        
        
           <!--main content-->
@@ -134,10 +94,10 @@
                 <div class="cta m-3">
                     <h3>Not registered?</h3>
                     <button type="button" class="btn btn-lg" id="ctaButton">
-                        <a  href="register.html">Register</a>
+                        <a  href="registration.html">Register</a>
                     </button>
 
-                    <a class="p-3 c_button" href="register.html">Register</a>
+                    <!--<a class="p-3 c_button" href="register.html">Register</a>-->
 
 
                     
