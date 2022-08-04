@@ -1,0 +1,81 @@
+<!--  Main navigation bar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="bar">
+            
+    <div class="container-fluid navSpace">
+      
+        <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+        
+        <ul class="d-flex mb-2 justify-content-center">
+            <!--navbar-nav me-auto mb-2 mb-lg-0 as alt once justify-content centers buttons-->
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn btn-sm dropdown-toggle px-4" 
+                            type="button" 
+                            id="dropLogin"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                    </button>
+                    
+                    <form class="dropdown-menu">
+                        <a class="dropdown-item" href="/">H o m e</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+
+                        <h3>Login</h3>
+                            <form action="/submitCreds" method="post">
+                                <label for="userName">username:</label><br>
+                                <input type="text"  name="userName"><br>
+                                <label for="password">password</label><br>
+                                <input type="password" id="password" name="password"><br>
+                                <input type="submit" value="Submit">
+
+                            </form>    
+                  <!--  <ul class="dropdown-menu" aria-labelledby="dropLogin">
+                        <li> <a class='dropdown-item' href="login.htm</li>
+                    </ul> -->
+
+                </div>
+                <!-- original home button
+                <button type="button" class="btn btn-sm">
+                <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+                </button>
+            -->
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm">
+                <a class="nav-link active px-4" aria-current="page" href="#">News</a>
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm">
+                <a class="nav-link active" aria-current="page" href="reviews">Reviews</a>
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm">
+                <a class="nav-link active" aria-current="page" href="showcase">Showcase</a>
+                </button>
+            </li>
+
+            
+
+
+            
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        
+      
+      </div>
+    </div>
+  </nav>
