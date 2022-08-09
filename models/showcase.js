@@ -1,0 +1,1 @@
+// model for the showcase containing content from db

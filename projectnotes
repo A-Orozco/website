@@ -1,0 +1,49 @@
+app.locals:  properites mapping to template variables;  for dynamic content
+wherever the variable goes, place:   <%= varName %>
+
+rebderubg templates in response:
+    -app object or res object can render page
+
+    app.render(view, [locals], callback)
+    view:  string, path to view file
+    locals: additional local params at last minute
+    callback:  function executing after template is renderedd
+        function must take this form:
+        function (err, p) {
+            //////////
+        }
+
+
+////////
+idea:  each profile has a 'clout' level, based on support/reject response form
+others with clout.
+    -all users start with 0 'clout'
+    -to increase, there must be original content posted
+            -img, vid, audio
+    idk
+
+res.render('template name', {object cotaining template data})
+
+to do
+------
+separate render() from router
+    for each route, pass user logged in flag to auto assign login/logout functionality for nav
+
+==================================
+
+
+for dynamic navbar
+<% if (userInfo == null) { %> -->
+    <a class="dropdown-item" href="#">Login</a>
+<% } else { %>
+        <a class="dropdown-item" href="/profile">Profile</a>
+        <a class="dropdown-item" href="#">Log off</a>
+<% } %>
+
+
+
+basic functionality:
+create user, login
+logged in to post content (showcase, reviews, news)  
+    content uploaded from db for showcase   
+    ''                        for profile
