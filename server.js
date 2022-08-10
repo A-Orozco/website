@@ -49,4 +49,3 @@ mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/aur
             console.log('Database connected, server listening on 3000');
         })
     }) 
-
