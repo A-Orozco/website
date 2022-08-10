@@ -43,7 +43,7 @@ mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/Aur
 
 //?retryWrites=true&w=majority
 
-mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/auralVoyage", {useNewURLParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/website", {useNewURLParser: true, useUnifiedTopology: true})
     .then( () => {
         app.listen( (process.env.PORT || 3000), () => {
             console.log('Database connected, server listening on 3000');
