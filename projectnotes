@@ -50,6 +50,7 @@ logged in to post content (showcase, reviews, news)
 
 regarding heroku:  if H10 on fresh project, 
             -always make sure git is updated
+            -ensure heroku is updated from git; git push heroku PRIMARY_BRANCH
             -ensure procfil is right
             -ensure process.env.PORT is included 
             -ensure atleast 1 dyno is up:  heroku ps:scale web=1
