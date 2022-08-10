@@ -41,9 +41,11 @@ mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/Aur
 })
 */
 
-mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/?retryWrites=true&w=majority", {useNewURLParser: true, useUnifiedTopology: true})
+//?retryWrites=true&w=majority
+
+mongoose.connect("mongodb+srv://aaoro:amanacity@cluster0.uuofk7n.mongodb.net/auralVoyage", {useNewURLParser: true, useUnifiedTopology: true, /*useFindAndModify: false*/})
     .then( () => {
-        app.listen(3000, () => {
+        app.listen( (process.env.PORT || 3000), () => {
             console.log('Database connected, server listening on 3000');
         })
     })
