@@ -157,11 +157,12 @@ router.get('/reviews', (req, res) => {
 router.post('/makePost', (req,res) => {
     const post = new Review({
         //may need to code for blank input fields
+        album: req.body.album,
+        artist: req.body.artist,
         title: req.body.title,
-        author: req.body.author,
-        imgLink: req.body.imgLink,
-        extLink: req.body.extLink,
-        opinion: req.body.opinion
+        opinion: req.body.review,
+
+       
     });
 
     Review.collection.insertOne(post)
