@@ -11,5 +11,8 @@ router.get("/profile", (req, res) => {
       },
     });
 
-    res.render('profile'); // pass relevant stuff to ejs
+    res.render('profile', 
+                {
+                    userName: req.user
+                }); // pass relevant stuff to ejs
   });
