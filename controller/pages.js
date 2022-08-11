@@ -154,7 +154,7 @@ router.get('/reviews', (req, res) => {
    // .catch(err => console.log(err));
 //})
 
-router.post('/makePost', (req,res) => {
+router.post('/postReview', (req,res) => {
     const post = new Review({
         //may need to code for blank input fields
         album: req.body.album,
