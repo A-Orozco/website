@@ -5,21 +5,104 @@ const User = require('../models/user');
 const ShowCase = require('../models/showcase');
 const Review = require('../models/reviews');
 const Comment = require('../models/comment');
+// authentication
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+// validation
+const { registerValidation, loginValidation } = require("../validation.js");
 // model for reviews
 // const Reviews = require('../models/reviews');
 // route for home page
 
+// HOME PAGE
 router.get('/', (req, res) => {
     res.render('index');
 });
-
+// LOGIN PAGE
 router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/register', (req, res) => {
-    res.render('register');
+
+// CREATING USER
+router.post("/createUser", async (req, res) => {
+  // validate the user
+  const { error } = registerValidation(req.body);
+
+  // throw validation errors
+  if (error) return res.status(400).json({ error: error.details[0].message });
+
+  const isEmailExist = await User.findOne({ email: req.body.email });
+
+  // throw error when email already registered
+  if (isEmailExist)
+    return res.status(400).json({ error: "Email already exists" });
+
+  // hash the password
+  const salt = await bcrypt.genSalt(10);
+  const password = await bcrypt.hash(req.body.password, salt);
+
+  const contact = new User ({
+    email: req.body.email,
+    userName: req.body.userName,
+    password
 });
+
+  try {
+
+    User.collection.insertOne(contact)
+    .then(result => {
+        res.render('index')
+    })
+    .catch(err => console.log(err));
+
+    /*const savedUser = await user.save();
+    res.json({ error: null, data: { userId: savedUser._id } });
+    */
+  } catch (error) {
+    res.status(400).json({ error });
+  }
+});
+
+//LOGGIN IN
+router.post("/login", async (req, res) => {
+  // validate the user
+  const { error } = loginValidation(req.body);
+
+  // throw validation errors
+  if (error) return res.status(400).json({ error: error.details[0].message });
+
+  const user = await User.findOne({ email: req.body.email });
+
+  // throw error when email is wrong
+  if (!user) return res.status(400).json({ error: "Email is wrong" });
+
+  // check for password correctness
+  const validPassword = await bcrypt.compare(req.body.password, user.password);
+  if (!validPassword)
+    return res.status(400).json({ error: "Password is wrong" });
+
+  // create token
+  const token = jwt.sign(
+    // payload data
+    {
+      name: user.name,
+      id: user._id,
+    },
+    process.env.TOKEN_SECRET
+  );
+
+  res.header("auth-token", token).json({
+    error: null,
+    data: {
+      token,
+    },
+  });
+});
+
+
+
+
 
 router.get('/news', (req, res) => {
     res.render('news');
@@ -53,19 +136,19 @@ router.get('/reviews', (req, res) => {
 
 
 //THE ONE
-router.post('/createUser', (req, res) => {
-    const contact = new User ({
-        email: req.body.email,
-        userName: req.body.userName,
-        password: req.body.password
-    });
-
-    User.collection.insertOne(contact)
-    .then(result => {
-        res.render('index')
-    })
-    .catch(err => console.log(err));
-})
+//router.post('/createUser', (req, res) => {
+//    const contact = new User ({
+//        email: req.body.email,
+//        userName: req.body.userName,
+//        password: req.body.password
+ //   });
+//
+  //  User.collection.insertOne(contact)
+    //.then(result => {
+      //  res.render('index')
+   // })
+   // .catch(err => console.log(err));
+//})
 
 router.post('/makePost', (req,res) => {
     const post = new Review({

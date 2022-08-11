@@ -1,8 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
+//login includes
+//const User = require('./models/user')
 const pagesRoute = require('./controller/pages');
+const profile = require('./controller/profile');
+const verifyToken = require('./controller/verifyToken');
 const path = require('path');
 
 const app = express();
@@ -11,6 +14,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded( { extended: true } ) );
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', pagesRoute);
+
+app.use("/profile", verifyToken, profile);
 // 404 error catch
 app.use( (req, res, next) => {
     next(createError(404));

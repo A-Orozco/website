@@ -48,6 +48,15 @@ logged in to post content (showcase, reviews, news)
     content uploaded from db for showcase   
     ''                        for profile
 
+login update:
+    in pages:  
+        post to create and store new user
+        for: showcase, review, news 
+            2 separate renders
+            if loggedIn middleware is true, internal(next) then a ejs template with content submission option appears
+            otherwise, regular ejs template renders, pulling content from db
+
+
 regarding heroku:  if H10 on fresh project, 
             -always make sure git is updated
             -ensure heroku is updated from git; git push heroku PRIMARY_BRANCH
