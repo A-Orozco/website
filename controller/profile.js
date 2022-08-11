@@ -1,18 +1,21 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+
 
 router.get("/profile", (req, res) => {
-    res.json({
+    /*res.json({
       error: null,
       data: {
-        title: "My dashboard",
-        content: "dashboard content",
-        user: req.user,
+    
+       // content: "dashboard content",
+        userName: req.user,
       },
-    });
+    });*/
 
-    res.render('profile', 
+   res.render('profile', 
                 {
                     userName: req.user
                 }); // pass relevant stuff to ejs
+    
   });
+  // def need this
+  module.exports = router;

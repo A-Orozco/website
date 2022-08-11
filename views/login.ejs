@@ -9,7 +9,7 @@
         <header class="page-header header container-fluid">
           
             <div class="container-fluid">
-                <h1 class="display-5 my-3" id="pageSign"><%=pageSign%></h1>
+                <h1 class="display-5 my-3" id="pageSign"><Login></h1>
             </div>
           
         </header>
@@ -17,9 +17,9 @@
         <main>
 
             <div class="container login">
-                <form action="/submitCreds" method="post">
-                    <label for="userName">username:</label><br>
-                    <input type="text"  name="userName"><br>
+                <form action="/login" method="post">
+                    <label for="email">email:</label><br>
+                    <input type="text"  name="email"><br>
                     <label for="password">password</label><br>
                     <input type="password" id="password" name="password"><br>
                     <input type="submit" value="Submit">

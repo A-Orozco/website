@@ -7,6 +7,8 @@ const pagesRoute = require('./controller/pages');
 const profile = require('./controller/profile');
 const verifyToken = require('./controller/verifyToken');
 const path = require('path');
+const createError = require('http-errors');
+
 
 const app = express();
 
@@ -16,19 +18,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', pagesRoute);
 
 app.use("/profile", verifyToken, profile);
+
 // 404 error catch
-app.use( (req, res, next) => {
-    next(createError(404));
-});
+//app.use( (req, res, next) => {
+//    next(createError(404));
+//});
 
 // error handler
-app.use(function(err, req, res) {
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+//app.use(function(err, req, res) {
+//    res.locals.message = err.message;
+//    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-    res.status(err.status || 500);
-    res.render('error');
-})
+//    res.status(err.status || 500);
+//    res.render('error');
+//})
 
 // olde style
 /*
