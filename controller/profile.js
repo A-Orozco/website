@@ -13,7 +13,7 @@ router.get("/profile", (req, res) => {
 
    res.render('profile', 
                 {
-                    userName: req.user
+                    userName: req.userName
                 }); // pass relevant stuff to ejs
     
   });

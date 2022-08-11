@@ -13,6 +13,7 @@ const { registerValidation, loginValidation } = require("../validation.js");
 // model for reviews
 // const Reviews = require('../models/reviews');
 // route for home page
+require("dotenv").config();
 
 // HOME PAGE
 router.get('/', (req, res) => {
@@ -92,13 +93,15 @@ router.post("/login", async (req, res) => {
     },
     process.env.TOKEN_SECRET
   );
-
+/*
   res.header("auth-token", token).json({
     error: null,
     data: {
       token,
     },
-  });
+  }); */
+
+  res.render('index');
 });
 
 
